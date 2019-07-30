@@ -14,7 +14,9 @@ module.exports = {
     },
     extends: ['plugin:@typescript-eslint/recommended'],
     plugins: ['react', 'jest', 'react-hooks', '@typescript-eslint', 'i18n'],
-    rules: {},
+    rules: {
+      '@typescript-eslint/indent': ['error', 2]
+    },
     settings: {
       react: {
         version: '999.999.999'
@@ -22,4 +24,3 @@ module.exports = {
     },
     globals: {}
   }
-  
