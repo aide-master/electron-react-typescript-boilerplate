@@ -1,5 +1,5 @@
 {
-  "name": "diskutils",
+  "name": "@aidemaster/diskutils",
   "version": "0.0.0",
   "description": "Disk utility",
   "main": "dist/index.js",
