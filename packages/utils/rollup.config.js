@@ -5,19 +5,20 @@ export default {
   output: [
     {
       file: pkg.main,
-      format: 'cjs',
+      format: 'cjs'
     },
     {
       file: pkg.module,
-      format: 'es',
-    },
+      format: 'es'
+    }
   ],
   external: [
     ...Object.keys(pkg.dependencies || {}),
-    ...Object.keys(pkg.peerDependencies || {}),
-  ],plugins: [
-    typescript({
-      typescript: require('typescript'),
-    }),
+    ...Object.keys(pkg.peerDependencies || {})
   ],
+  plugins: [
+    typescript({
+      typescript: require('typescript')
+    })
+  ]
 }
